@@ -1,0 +1,13 @@
+__pycache__/*
+__pycache__/_channel.cpython-38.pyc
+__pycache__/_css.cpython-38.pyc
+__pycache__/_decoder.cpython-38.pyc
+__pycache__/_draw.cpython-38.pyc
+__pycache__/_experiment.cpython-38.pyc
+__pycache__/_pauli.cpython-38.pyc
+__pycache__/evaluation.cpython-38.pyc
+examples_notebook/.ipynb_checkpoints/*
+examples_notebook/.ipynb_checkpoints/_draw_code-checkpoint.ipynb
+examples_notebook/.ipynb_checkpoints/_symmetries_action-checkpoint.ipynb
+examples_notebook/.ipynb_checkpoints/_test_translation-checkpoint.ipynb
+examples_notebook/.ipynb_checkpoints/threshold_evaluation-checkpoint.ipynb

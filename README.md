@@ -1,20 +1,20 @@
 # Frog
+
 Frog makes QEC.
 
+Frog is a codebase for experiments with neural decoder for Toric code.
 
+The implementation is organized around a modular decoding pipeline: a **code**, a **noise channel**, and a **decoder**. Each of these components is defined through an abstract interface, and concrete implementations follow these interfaces. It is worth preserving this structure when extending the codebase.
 
-# How to use:
-+ You can explore the examples in the `examples_notebook/` folder. These notebooks use the main routines and objects from the codebase, including code construction, symmetry actions, coset decoding, and threshold evaluation. 
-+ Structure of code is following:
-  + Decoding is subject of code, noise channel and decoder. Each of this objects defined as class with abstract interface (abc class).
-    Than each class follows this interface. It worth to keep it.
-  + Experiment, modules, net_modules, loss, trainer contain code related to training/learnable decoder.
+The modules `experiment`, `modules`, `net_modules`, `loss`, and `trainer` contain the code related to training learnable decoders.
 
-##
+## How to use
+
+You can explore the examples in the [`examples_notebook/`](examples_notebook/) folder. These notebooks demonstrate the main routines and objects from the codebase, including code construction, symmetry actions, coset decoding, and threshold evaluation.
 
 ## Example notebooks
 
-The `examples_notebook/` folder contains small Jupyter notebooks demonstrating the main components of Frog and the experiments used for equivariant neural decoding of quantum error-correcting codes.
+The [`examples_notebook/`](examples_notebook/) folder contains small Jupyter notebooks demonstrating the main components of Frog and the experiments used for equivariant neural decoding of quantum error-correcting codes.
 
 - [`_draw_code.ipynb`](examples_notebook/_draw_code.ipynb)  
   Visualizes the lattice/code structure and the objects used by the decoder. Useful as a first notebook for understanding the geometry of the problem.
@@ -31,6 +31,10 @@ The `examples_notebook/` folder contains small Jupyter notebooks demonstrating t
 - [`threshold_evaluation.ipynb`](examples_notebook/threshold_evaluation.ipynb)  
   Runs threshold-style evaluation experiments for decoders across different physical error rates and code sizes.
 
-# Paper:
-+ [The END: An Equivariant Neural Decoder for Quantum Error Correction](https://arxiv.org/abs/2304.07362)
-Many thanks to Roberto Bondesan and Max Welling
+## Paper
+
+This repository is related to the paper:
+
+- [**The END: An Equivariant Neural Decoder for Quantum Error Correction**](https://arxiv.org/abs/2304.07362)
+
+Many thanks to Roberto Bondesan and Max Welling.
